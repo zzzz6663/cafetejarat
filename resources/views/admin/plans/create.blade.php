@@ -34,7 +34,7 @@
                                     <input type="text" name="name" value="{{old('name')}}" class="form-control" name="example-text-input" placeholder="نام طرح  ">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="p_type">حالت ارسال</label>
+                                    <label class="form-label s" for="p_type">حالت ارسال</label>
                                     <select class="form-select" name="type" id="p_type">
                                         <option {{old('type')=='personal'?'selected':''}} value="personal">شخصی</option>
                                         <option {{old('type')=='collection'?'selected':''}} value="collection">مجموعه</option>
