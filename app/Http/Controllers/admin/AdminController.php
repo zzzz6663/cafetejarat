@@ -35,7 +35,7 @@ class AdminController extends Controller
                 $query->where('id',$shahr );
             });
         }
-        $agents=$agents->latest()->paginate(10);
+        $agents=$agents->latest()->paginate(8);
         return view('admin.agents.all',compact('agents'));
     }
 
