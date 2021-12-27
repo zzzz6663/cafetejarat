@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateTutorialsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('videos', function (Blueprint $table) {
+            $table->id();
+            $table->string('title')->nullable();
+            $table->string('video')->nullable();
+            $table->string('cover')->nullable();
+            $table->text('content')->nullable();
+            $table->string('type')->nullable();
+            $table->string('model')->nullable();
+
+            $table->string('price')->default('0')->nullable();
+            $table->string('sort')->default('1')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('videos');
+    }
+}
