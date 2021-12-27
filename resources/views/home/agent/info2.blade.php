@@ -1,6 +1,6 @@
 @extends('masters.home')
 @section('main_body')
-
+ 
 <div class="content-box">
     <div class="main-title">
         <h3>تکمیل اطلاعات</h3>
@@ -12,7 +12,7 @@
             <p>به جمع جهادی ما خوش اومدی!</p>
             <p>ان‌شاءالله با همت شما رفقا، به زودی حال اقتصاد ایران ما خوب می‌شه؛ لطفا اطلاعاتت رو خیلی دقیق و با حوصله تکمیل کن که بتونیم با شناخت بهتر نتیجه بیشتری بگیریم.</p>
         </div>
- 
+
         <div class="process">
             <ul>
                 <li class="step step1">

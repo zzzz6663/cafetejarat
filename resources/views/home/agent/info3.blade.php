@@ -1,7 +1,7 @@
 @extends('masters.home')
 @section('main_body')
 
-<div class="content-box"> 
+<div class="content-box">  
     <div class="main-title">
         <h3>تکمیل اطلاعات</h3>
         <a href="{{route('login')}}"></a>
