@@ -30,7 +30,7 @@ return [
     'pay_video_by_charge' => '    پرداخت با کیف ',
     'wallet_charge' => '     شارژ کیف',
     'video' => ' خرید ویدئو   ',
-    '' => '     ',
+    'travel' => '    سفر ',
     '' => '     ',
     '' => '     ',
 

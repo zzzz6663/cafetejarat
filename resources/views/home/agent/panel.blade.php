@@ -90,7 +90,7 @@
         </div>
 
         <div class="button-row">
-            <a class="disn">
+            <a href="{{route('agent.downloads')}}">
                 <span class="icon">
 
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="32.4px">
@@ -142,7 +142,7 @@
                     <a class="disn" >فروشگاه</a>
                 </li>
                 <li>
-                    <a class="disn">فعالیت ها</a>
+                    <a href="{{route('agent.reports')}}"> فعالیت ها</a>
                 </li>
                 <li>
                     <a href="{{route('agent.contact')}}">ارتباطات</a>

@@ -16,9 +16,10 @@
     <link href="/manager/dist/css/demo.rtl.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/home/css/iziModal.min.css">
     <link rel="stylesheet" href="/home/css/lightbox.min.css">
+    <link rel="stylesheet" href="/home/css/persian-datepicker.css">
     {{-- <link rel="stylesheet" href="/home/css/videopopup.css"> --}}
     <link rel="stylesheet" href="/home/css/plyr.css">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app1.css">
     <script type="text/javascript" src="/home/js/jquery-2.2.0.min.js"></script>
 
 </head>
@@ -42,10 +43,12 @@
 <script src="/home/js/fun.js"></script>
 <script type="text/javascript" src="/home/js/iziModal.min.js"></script>
 <script type="text/javascript" src="/home/js/lightbox.min.js"></script>
+<script type="text/javascript" src="/home/js/persian-date.min.js"></script>.
+<script type="text/javascript" src="/home/js/persian-datepicker.min.js"></script>.
 <script type="text/javascript" src="/home/js/plyr.js"></script>.
 <script type="text/javascript" src="/home/js/tinymce/tinymce.min.js"></script>.
 {{-- <script type="text/javascript" src="/home/js/videopopup.js"></script> --}}
-<script type="text/javascript" src="/home/js/home.js"></script>
+<script type="text/javascript" src="/home/js/home1.js"></script>
 {{--<script src="/home/js/libd.js"></script>--}}
 
 <script src="{{asset('/js/app.js')}}"></script>

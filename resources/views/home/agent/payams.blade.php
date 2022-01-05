@@ -14,7 +14,13 @@
 
         <div class="profile-top">
             <div class="img">
-                <img src="{{$user->avatar()}}" alt="">
+                @if($user->attr('avatar'))
+                <img style="width: 95px" src="{{$user->avatar()}}" alt="">
+
+                 @else
+                <img src="/home/images/user3.png" alt="">
+
+                @endif
             </div>
             <div class="lefts">
                 <h4>

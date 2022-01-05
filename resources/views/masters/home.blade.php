@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/home/css/iziModal.min.css">
     <link rel="stylesheet" href="/home/css/croppie.css">
     {{-- <link rel="stylesheet" href="/home/css/persianDatepicker-default.css"> --}}
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
           content="دهکده کارآفرینی
@@ -52,7 +52,7 @@
 <script type="text/javascript" src="/home/js/croppie.js"></script>
 <script type="text/javascript" src="/home/js/template.js"></script>
 <script type="text/javascript" src="/home/js/fun.js"></script>
-<script type="text/javascript" src="/home/js/home.js"></script>
+<script type="text/javascript" src="/home/js/home1.js"></script>
 <script type="text/javascript" src="/js/app.js"></script>
 </body>
 @include('sweet::alert')

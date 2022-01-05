@@ -47,6 +47,8 @@ Route::prefix('admin')->namespace('admin')->middleware([ 'checkadmin','auth'])->
     Route::get('video/cat/{vcat}', 'VideoController@cat')->name('video.cat');;
     Route::resource('video', 'VideoController');
     Route::resource('question', 'QuestionController');
+    Route::resource('report', 'ReportController');
+    Route::resource('download', 'DownloadController');
 });
 
 
@@ -75,6 +77,9 @@ Route::middleware([ 'auth'])->group(function(){
     Route::get('/send_pay','BillController@send_pay')->name('agent.send.pay');
     Route::get('/verify_pay','BillController@verify_pay')->name('agent.verify.pay');
 
+    Route::get('/payams','AgentController@payams')->name('agent.payams');
+    Route::get('/downloads','AgentController@downloads')->name('agent.downloads');
+    Route::get('/reports','AgentController@reports')->name('agent.reports');
     Route::get('/payams','AgentController@payams')->name('agent.payams');
     Route::get('/single_payams/{payam}','AgentController@single_payams')->name('agent.single.payams');
 });

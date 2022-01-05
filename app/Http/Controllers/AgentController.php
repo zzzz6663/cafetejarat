@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Download;
 use Carbon\Carbon;
 use App\Models\Plan;
 use App\Models\User;
 use App\Models\Vcat;
 use App\Models\Ostan;
 use App\Models\Payam;
+use App\Models\Report;
 use App\Models\Shahr;
 use App\Models\Video;
 use Illuminate\Http\Request;
@@ -263,4 +265,21 @@ class AgentController extends Controller
         return redirect()->route('agent.single.vcat',$video->vcat->id);
 
     }
+
+    public function  reports (Request $request ){
+        $user=auth()->user();
+        $past_reports=Report::where('end','<',Carbon::now())->latest()->get();
+        $current_reports=Report::where('end','>=',Carbon::now())->where('start','<=',Carbon::now())->latest()->get();
+        $future_reports=Report::where('start','>',Carbon::now())->latest()->get();
+
+
+        return view('home.agent.reports', compact(['user','past_reports','current_reports','future_reports']));
+    }
+    public function  downloads  (Request $request ){
+        $user=auth()->user();
+        $downloads=Download::latest()->get();
+
+        return view('home.agent.downloads', compact(['user','downloads']));
+    }
+
 }

@@ -31,8 +31,8 @@
                             </div>
 
                             <div class="try" >
-                                <span id="remember_sms" hidden style="cursor: pointer" data-url="{{route('remember.sms')}}">
-                                    ارسال رمز
+                                <span id="remember_sms"   style="cursor: pointer" data-url="{{route('remember.sms')}}">
+                                   فراموشی رمز
                                 </span>
                                 <div class="cdown">  </div>
                             </div>

@@ -2,7 +2,7 @@
 @section('main_body')
 <div class="content-box">
     <div class="main-title">
-        <h3>پیامها</h3>
+        <h3>مشاهده ویدئو</h3>
         <a href="{{route('login')}}"></a>
     </div>
 
@@ -14,7 +14,13 @@
 
         <div class="profile-top mb20">
             <div class="img">
-                <img src="{{$user->avatar()}}" alt="">
+                @if($user->attr('avatar'))
+                <img style="width: 95px" src="{{$user->avatar()}}" alt="">
+
+                 @else
+                <img src="/home/images/user3.png" alt="">
+
+                @endif
             </div>
             <div class="lefts">
                 <h4>
@@ -143,14 +149,14 @@
 
             </div>
         </div>
-
+{{--
         <div class="col-lg-12">
             <div>
                 <div class="button-container">
                    <a href="{{route('agent.panel')}}">برگشت</a>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
 
     </div>

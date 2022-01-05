@@ -1,9 +1,32 @@
 .disnon {
   display: none;
 }
+@media only screen and (max-width: 600px) {
+    .content-box {
+        margin: 0 auto;
+        height: 94vh;
+        overflow: auto;
+      }
 
+}
 .content-box {
-  margin: 0 auto;
+    margin: 0 auto;
+  }
+
+.daty_i li .title {
+  font-size: 16px;
+  color: #000;
+}
+.daty_i li .contetn {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.daty_i li .red {
+  color: red;
+}
+.daty_i li .green {
+  color: #1dc772;
 }
 
 .linky {
@@ -20,7 +43,7 @@
 }
 .linky img {
   width: 20px;
-  height: 20px; 
+  height: 20px;
   position: relative;
   top: 7px;
 }
